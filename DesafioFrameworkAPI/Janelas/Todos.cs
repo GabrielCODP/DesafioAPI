@@ -39,6 +39,14 @@ namespace DesafioFrameworkAPI.Janelas
                 }
 
             }
+
+            btnGerarTodos.Visible = false;
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            richTextBoxTodos.Clear();
+            btnGerarTodos.Visible = true;
         }
     }
 }

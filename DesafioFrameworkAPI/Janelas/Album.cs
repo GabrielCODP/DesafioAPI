@@ -34,11 +34,19 @@ namespace DesafioFrameworkAPI.Janelas
                 }
 
             }
+
+            btnGerarAlbum.Visible = false;
         }
 
         private void richTextBoxAlbuns_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            richTextBoxAlbuns.Clear();
+            btnGerarAlbum.Visible = true;
         }
     }
 }

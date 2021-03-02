@@ -32,6 +32,7 @@ namespace DesafioFrameworkAPI.Janelas
             this.richTextBoxTodos = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnGerarTodos = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // richTextBoxTodos
@@ -41,7 +42,7 @@ namespace DesafioFrameworkAPI.Janelas
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBoxTodos.Location = new System.Drawing.Point(31, 102);
             this.richTextBoxTodos.Name = "richTextBoxTodos";
-            this.richTextBoxTodos.Size = new System.Drawing.Size(713, 305);
+            this.richTextBoxTodos.Size = new System.Drawing.Size(719, 305);
             this.richTextBoxTodos.TabIndex = 4;
             this.richTextBoxTodos.Text = "";
             this.richTextBoxTodos.TextChanged += new System.EventHandler(this.richTextBoxTodos_TextChanged);
@@ -59,7 +60,7 @@ namespace DesafioFrameworkAPI.Janelas
             // btnGerarTodos
             // 
             this.btnGerarTodos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGerarTodos.Location = new System.Drawing.Point(616, 43);
+            this.btnGerarTodos.Location = new System.Drawing.Point(654, 12);
             this.btnGerarTodos.Name = "btnGerarTodos";
             this.btnGerarTodos.Size = new System.Drawing.Size(128, 23);
             this.btnGerarTodos.TabIndex = 7;
@@ -67,15 +68,29 @@ namespace DesafioFrameworkAPI.Janelas
             this.btnGerarTodos.UseVisualStyleBackColor = true;
             this.btnGerarTodos.Click += new System.EventHandler(this.btnGerarTodos_Click);
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLimpar.Location = new System.Drawing.Point(654, 41);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(128, 23);
+            this.btnLimpar.TabIndex = 8;
+            this.btnLimpar.Text = "Limpar Todos";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
             // Todos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(788, 450);
+            this.BackColor = System.Drawing.Color.LightGray;
+            this.ClientSize = new System.Drawing.Size(794, 450);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnGerarTodos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.richTextBoxTodos);
             this.Name = "Todos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Todos";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -87,5 +102,6 @@ namespace DesafioFrameworkAPI.Janelas
         private System.Windows.Forms.RichTextBox richTextBoxTodos;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnGerarTodos;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }

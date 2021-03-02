@@ -32,6 +32,7 @@ namespace DesafioFrameworkAPI.Janelas
             this.label1 = new System.Windows.Forms.Label();
             this.btnGerarPostagem = new System.Windows.Forms.Button();
             this.richTextBoxPostagem = new System.Windows.Forms.RichTextBox();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -68,14 +69,28 @@ namespace DesafioFrameworkAPI.Janelas
             this.richTextBoxPostagem.Text = "";
             this.richTextBoxPostagem.TextChanged += new System.EventHandler(this.richTextBoxPostagem_TextChanged);
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLimpar.Location = new System.Drawing.Point(667, 41);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(128, 23);
+            this.btnLimpar.TabIndex = 4;
+            this.btnLimpar.Text = "Limpar Postagem";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
             // Postagem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(807, 436);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.richTextBoxPostagem);
             this.Controls.Add(this.btnGerarPostagem);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Postagem";
             this.Text = "Postagem";
             this.ResumeLayout(false);
@@ -87,5 +102,6 @@ namespace DesafioFrameworkAPI.Janelas
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnGerarPostagem;
         private System.Windows.Forms.RichTextBox richTextBoxPostagem;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }

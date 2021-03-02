@@ -32,6 +32,7 @@ namespace DesafioFrameworkAPI.Janelas
             this.richTextBoxAlbuns = new System.Windows.Forms.RichTextBox();
             this.btnGerarAlbum = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // richTextBoxAlbuns
@@ -67,15 +68,29 @@ namespace DesafioFrameworkAPI.Janelas
             this.label1.TabIndex = 4;
             this.label1.Text = "Album";
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLimpar.Location = new System.Drawing.Point(660, 52);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(128, 23);
+            this.btnLimpar.TabIndex = 5;
+            this.btnLimpar.Text = "Limpar Album";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
             // Album
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGerarAlbum);
             this.Controls.Add(this.richTextBoxAlbuns);
             this.Name = "Album";
+            this.RightToLeftLayout = true;
             this.Text = "Album";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -87,5 +102,6 @@ namespace DesafioFrameworkAPI.Janelas
         private System.Windows.Forms.RichTextBox richTextBoxAlbuns;
         private System.Windows.Forms.Button btnGerarAlbum;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }

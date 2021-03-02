@@ -184,7 +184,7 @@ namespace DesafioFrameworkAPI
             // 
             // panelConteudo
             // 
-            this.panelConteudo.BackColor = System.Drawing.SystemColors.Control;
+            this.panelConteudo.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panelConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelConteudo.Location = new System.Drawing.Point(110, 70);
             this.panelConteudo.Name = "panelConteudo";

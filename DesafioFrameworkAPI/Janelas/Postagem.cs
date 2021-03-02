@@ -34,6 +34,8 @@ namespace DesafioFrameworkAPI.Janelas
                 }
 
             }
+
+            btnGerarPostagem.Visible = false;
         }
 
        
@@ -45,6 +47,12 @@ namespace DesafioFrameworkAPI.Janelas
         private void richTextBoxPostagem_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            richTextBoxPostagem.Clear();
+            btnGerarPostagem.Visible = true;
         }
     }
 }
