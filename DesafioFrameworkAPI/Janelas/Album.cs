@@ -25,22 +25,23 @@ namespace DesafioFrameworkAPI.Janelas
 
             async Task EntradaDeDadosAlbum()
             {
-                var dadosAPI = RestService.For<IAlbums>(UrlControle.BaseUrl);
-                var resultado = await dadosAPI.GetAlbumTotal();
-
-                foreach (var item in resultado)
+                try
                 {
-                    richTextBoxAlbuns.AppendText($"\n\n_UserId: {item.userId}\n_id:{item.id}\n_Title: {item.title}");
+                    var dadosAPI = RestService.For<IAlbums>(UrlControle.BaseUrl);
+                    var resultado = await dadosAPI.GetAlbumTotal();
+
+                    foreach (var item in resultado)
+                        richTextBoxAlbuns.AppendText($"\n\n_UserId: {item.userId}\n_id:{item.id}\n_Title: {item.title}");
+                }
+                catch (Exception e)
+                {
+
+                    richTextBoxAlbuns.AppendText("Erro ao gerar dados: " + e);
                 }
 
             }
 
             btnGerarAlbum.Visible = false;
-        }
-
-        private void richTextBoxAlbuns_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)

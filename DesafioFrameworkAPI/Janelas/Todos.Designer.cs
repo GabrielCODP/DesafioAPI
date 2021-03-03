@@ -40,9 +40,9 @@ namespace DesafioFrameworkAPI.Janelas
             this.richTextBoxTodos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBoxTodos.Location = new System.Drawing.Point(31, 102);
+            this.richTextBoxTodos.Location = new System.Drawing.Point(12, 61);
             this.richTextBoxTodos.Name = "richTextBoxTodos";
-            this.richTextBoxTodos.Size = new System.Drawing.Size(719, 305);
+            this.richTextBoxTodos.Size = new System.Drawing.Size(741, 304);
             this.richTextBoxTodos.TabIndex = 4;
             this.richTextBoxTodos.Text = "";
             this.richTextBoxTodos.TextChanged += new System.EventHandler(this.richTextBoxTodos_TextChanged);
@@ -51,7 +51,7 @@ namespace DesafioFrameworkAPI.Janelas
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Unispace", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 22);
+            this.label1.Location = new System.Drawing.Point(12, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 35);
             this.label1.TabIndex = 5;
@@ -59,8 +59,8 @@ namespace DesafioFrameworkAPI.Janelas
             // 
             // btnGerarTodos
             // 
-            this.btnGerarTodos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGerarTodos.Location = new System.Drawing.Point(654, 12);
+            this.btnGerarTodos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnGerarTodos.Location = new System.Drawing.Point(12, 371);
             this.btnGerarTodos.Name = "btnGerarTodos";
             this.btnGerarTodos.Size = new System.Drawing.Size(128, 23);
             this.btnGerarTodos.TabIndex = 7;
@@ -70,8 +70,8 @@ namespace DesafioFrameworkAPI.Janelas
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLimpar.Location = new System.Drawing.Point(654, 41);
+            this.btnLimpar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnLimpar.Location = new System.Drawing.Point(158, 371);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(128, 23);
             this.btnLimpar.TabIndex = 8;
@@ -83,8 +83,8 @@ namespace DesafioFrameworkAPI.Janelas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(794, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(44)))), ((int)(((byte)(245)))));
+            this.ClientSize = new System.Drawing.Size(765, 450);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnGerarTodos);
             this.Controls.Add(this.label1);

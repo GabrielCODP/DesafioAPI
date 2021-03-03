@@ -4,11 +4,19 @@ using System.Text;
 
 namespace DesafioFrameworkAPI.Classes
 {
-    class Todos
+    class TodosC
     {
         public int userId { get; set; }
         public int id { get; set; }
         public string title { get; set; }
         public bool completed { get; set; }
+
+        public TodosC(int userId, int id, string title, bool completed)
+        {
+            this.userId = userId;
+            this.id = id;
+            this.title = title;
+            this.completed = completed;
+        }
     }
 }

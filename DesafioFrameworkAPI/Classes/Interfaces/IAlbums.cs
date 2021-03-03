@@ -9,9 +9,9 @@ namespace DesafioFrameworkAPI.Classes.Interfaces
     interface IAlbums
     {
         [Get("/albums")]
-        Task<ICollection<Album>> GetAlbumTotal();
+        Task<ICollection<Albuns>> GetAlbumTotal();
 
         [Get("/albums/{id}")]
-        Task<Album> GetId(int id);
+        Task<Albuns> GetId(int id);
     }
 }

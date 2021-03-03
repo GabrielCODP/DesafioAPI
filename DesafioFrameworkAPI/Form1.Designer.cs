@@ -36,6 +36,7 @@ namespace DesafioFrameworkAPI
             this.btnMaximizar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.panelIcons = new System.Windows.Forms.Panel();
+            this.btnAbrirTabela = new System.Windows.Forms.Button();
             this.btnTodos = new System.Windows.Forms.Button();
             this.btnAlbum = new System.Windows.Forms.Button();
             this.btnPostagem = new System.Windows.Forms.Button();
@@ -90,7 +91,7 @@ namespace DesafioFrameworkAPI
             this.btnMaximizar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnMaximizar.FlatAppearance.BorderSize = 0;
             this.btnMaximizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnMaximizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnMaximizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender;
             this.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
             this.btnMaximizar.Location = new System.Drawing.Point(640, 23);
@@ -119,6 +120,7 @@ namespace DesafioFrameworkAPI
             // panelIcons
             // 
             this.panelIcons.BackColor = System.Drawing.Color.SlateBlue;
+            this.panelIcons.Controls.Add(this.btnAbrirTabela);
             this.panelIcons.Controls.Add(this.btnTodos);
             this.panelIcons.Controls.Add(this.btnAlbum);
             this.panelIcons.Controls.Add(this.btnPostagem);
@@ -127,6 +129,24 @@ namespace DesafioFrameworkAPI
             this.panelIcons.Name = "panelIcons";
             this.panelIcons.Size = new System.Drawing.Size(110, 380);
             this.panelIcons.TabIndex = 1;
+            // 
+            // btnAbrirTabela
+            // 
+            this.btnAbrirTabela.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAbrirTabela.FlatAppearance.BorderSize = 0;
+            this.btnAbrirTabela.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAbrirTabela.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnAbrirTabela.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAbrirTabela.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirTabela.Image")));
+            this.btnAbrirTabela.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAbrirTabela.Location = new System.Drawing.Point(0, 188);
+            this.btnAbrirTabela.Name = "btnAbrirTabela";
+            this.btnAbrirTabela.Size = new System.Drawing.Size(87, 32);
+            this.btnAbrirTabela.TabIndex = 6;
+            this.btnAbrirTabela.Text = "Tabelas";
+            this.btnAbrirTabela.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAbrirTabela.UseVisualStyleBackColor = true;
+            this.btnAbrirTabela.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnTodos
             // 
@@ -222,6 +242,7 @@ namespace DesafioFrameworkAPI
         private System.Windows.Forms.Button btnAlbum;
         private System.Windows.Forms.Button btnPostagem;
         private System.Windows.Forms.Panel panelConteudo;
+        private System.Windows.Forms.Button btnAbrirTabela;
     }
 }
 

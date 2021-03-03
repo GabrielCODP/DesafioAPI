@@ -63,6 +63,16 @@ namespace DesafioFrameworkAPI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Data_Grid_icon {
+            get {
+                object obj = ResourceManager.GetObject("Data-Grid-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Fechar42 {
             get {
                 object obj = ResourceManager.GetObject("Fechar42", resourceCulture);

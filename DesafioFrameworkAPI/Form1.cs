@@ -76,6 +76,7 @@ namespace DesafioFrameworkAPI
         private void btnPostagem_Click(object sender, EventArgs e)
         {
             AbrirFormulario<Postagem>();
+            
         }
 
         private void btnAlbum_Click(object sender, EventArgs e)
@@ -91,6 +92,11 @@ namespace DesafioFrameworkAPI
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<TabelaDados>();
         }
     }
 }

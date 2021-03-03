@@ -30,12 +30,20 @@ namespace DesafioFrameworkAPI.Janelas
 
             async Task EntradaDeDadosTodos()
             {
-                var dadosAPI = RestService.For<ITodos>(UrlControle.BaseUrl);
-                var resultado = await dadosAPI.GetPostagemTotal();
-
-                foreach (var item in resultado)
+                try
                 {
-                    richTextBoxTodos.AppendText($"\n\n_UserId: {item.userId}\n_id:{item.id}\n_Title: {item.title}\n_Completed: {item.completed}");
+                    var dadosAPI = RestService.For<ITodos>(UrlControle.BaseUrl);
+                    var resultado = await dadosAPI.GetPostagemTotal();
+
+                    foreach (var item in resultado)
+                    {
+                        richTextBoxTodos.AppendText($"\n\n_UserId: {item.userId}\n_id:{item.id}\n_Title: {item.title}\n_Completed: {item.completed}");
+                    }
+                }
+                catch (Exception)
+                {
+
+                    richTextBoxTodos.AppendText("Erro ao gerar dados: " + e);
                 }
 
             }
