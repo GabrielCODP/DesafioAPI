@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "O8fUIeu9DDKEbQHYY1uGSbl2L8Zz0UdB3gVteZ4FXAiYVPNihsr2RvZ8j2KoxBYZKAau6bwfB76cEfV4w5hLcQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Gabriel\\source\\repos\\DesafioFrameworkAPI\\DesafioFrameworkAPI\\DesafioFrameworkAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gabriel\\.nuget\\packages\\refit\\6.0.24\\refit.6.0.24.nupkg.sha512",
+    "C:\\Users\\Gabriel\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512",
+    "C:\\Users\\Gabriel\\.nuget\\packages\\system.text.json\\5.0.1\\system.text.json.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
