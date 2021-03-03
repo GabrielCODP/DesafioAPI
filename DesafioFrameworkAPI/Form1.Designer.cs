@@ -36,6 +36,8 @@ namespace DesafioFrameworkAPI
             this.btnMaximizar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.panelIcons = new System.Windows.Forms.Panel();
+            this.btnTabelaDeTodos = new System.Windows.Forms.Button();
+            this.btnTabelasDeAlbuns = new System.Windows.Forms.Button();
             this.btnAbrirTabela = new System.Windows.Forms.Button();
             this.btnTodos = new System.Windows.Forms.Button();
             this.btnAlbum = new System.Windows.Forms.Button();
@@ -120,6 +122,8 @@ namespace DesafioFrameworkAPI
             // panelIcons
             // 
             this.panelIcons.BackColor = System.Drawing.Color.SlateBlue;
+            this.panelIcons.Controls.Add(this.btnTabelaDeTodos);
+            this.panelIcons.Controls.Add(this.btnTabelasDeAlbuns);
             this.panelIcons.Controls.Add(this.btnAbrirTabela);
             this.panelIcons.Controls.Add(this.btnTodos);
             this.panelIcons.Controls.Add(this.btnAlbum);
@@ -127,8 +131,43 @@ namespace DesafioFrameworkAPI
             this.panelIcons.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelIcons.Location = new System.Drawing.Point(0, 70);
             this.panelIcons.Name = "panelIcons";
-            this.panelIcons.Size = new System.Drawing.Size(110, 380);
+            this.panelIcons.Size = new System.Drawing.Size(138, 380);
             this.panelIcons.TabIndex = 1;
+            // 
+            // btnTabelaDeTodos
+            // 
+            this.btnTabelaDeTodos.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnTabelaDeTodos.FlatAppearance.BorderSize = 0;
+            this.btnTabelaDeTodos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnTabelaDeTodos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnTabelaDeTodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTabelaDeTodos.Image = ((System.Drawing.Image)(resources.GetObject("btnTabelaDeTodos.Image")));
+            this.btnTabelaDeTodos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTabelaDeTodos.Location = new System.Drawing.Point(0, 111);
+            this.btnTabelaDeTodos.Name = "btnTabelaDeTodos";
+            this.btnTabelaDeTodos.Size = new System.Drawing.Size(117, 32);
+            this.btnTabelaDeTodos.TabIndex = 8;
+            this.btnTabelaDeTodos.Text = "Tabela-Todos";
+            this.btnTabelaDeTodos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTabelaDeTodos.UseVisualStyleBackColor = true;
+            this.btnTabelaDeTodos.Click += new System.EventHandler(this.btnTabelaDeTodos_Click);
+            // 
+            // btnTabelasDeAlbuns
+            // 
+            this.btnTabelasDeAlbuns.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnTabelasDeAlbuns.FlatAppearance.BorderSize = 0;
+            this.btnTabelasDeAlbuns.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnTabelasDeAlbuns.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnTabelasDeAlbuns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTabelasDeAlbuns.Image = ((System.Drawing.Image)(resources.GetObject("btnTabelasDeAlbuns.Image")));
+            this.btnTabelasDeAlbuns.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTabelasDeAlbuns.Location = new System.Drawing.Point(0, 63);
+            this.btnTabelasDeAlbuns.Name = "btnTabelasDeAlbuns";
+            this.btnTabelasDeAlbuns.Size = new System.Drawing.Size(152, 42);
+            this.btnTabelasDeAlbuns.TabIndex = 7;
+            this.btnTabelasDeAlbuns.Text = "Tabela-Álbum";
+            this.btnTabelasDeAlbuns.UseVisualStyleBackColor = true;
+            this.btnTabelasDeAlbuns.Click += new System.EventHandler(this.btnTabelasDeAlbuns_Click);
             // 
             // btnAbrirTabela
             // 
@@ -139,11 +178,11 @@ namespace DesafioFrameworkAPI
             this.btnAbrirTabela.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAbrirTabela.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirTabela.Image")));
             this.btnAbrirTabela.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAbrirTabela.Location = new System.Drawing.Point(0, 188);
+            this.btnAbrirTabela.Location = new System.Drawing.Point(0, 25);
             this.btnAbrirTabela.Name = "btnAbrirTabela";
-            this.btnAbrirTabela.Size = new System.Drawing.Size(87, 32);
+            this.btnAbrirTabela.Size = new System.Drawing.Size(138, 32);
             this.btnAbrirTabela.TabIndex = 6;
-            this.btnAbrirTabela.Text = "Tabelas";
+            this.btnAbrirTabela.Text = "Tabela-Postagem";
             this.btnAbrirTabela.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAbrirTabela.UseVisualStyleBackColor = true;
             this.btnAbrirTabela.Click += new System.EventHandler(this.button1_Click);
@@ -157,7 +196,7 @@ namespace DesafioFrameworkAPI
             this.btnTodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTodos.Image = ((System.Drawing.Image)(resources.GetObject("btnTodos.Image")));
             this.btnTodos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTodos.Location = new System.Drawing.Point(0, 132);
+            this.btnTodos.Location = new System.Drawing.Point(0, 287);
             this.btnTodos.Name = "btnTodos";
             this.btnTodos.Size = new System.Drawing.Size(87, 32);
             this.btnTodos.TabIndex = 5;
@@ -175,7 +214,7 @@ namespace DesafioFrameworkAPI
             this.btnAlbum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlbum.Image = ((System.Drawing.Image)(resources.GetObject("btnAlbum.Image")));
             this.btnAlbum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAlbum.Location = new System.Drawing.Point(0, 84);
+            this.btnAlbum.Location = new System.Drawing.Point(0, 237);
             this.btnAlbum.Name = "btnAlbum";
             this.btnAlbum.Size = new System.Drawing.Size(87, 32);
             this.btnAlbum.TabIndex = 4;
@@ -193,7 +232,7 @@ namespace DesafioFrameworkAPI
             this.btnPostagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPostagem.Image = ((System.Drawing.Image)(resources.GetObject("btnPostagem.Image")));
             this.btnPostagem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPostagem.Location = new System.Drawing.Point(0, 31);
+            this.btnPostagem.Location = new System.Drawing.Point(0, 186);
             this.btnPostagem.Name = "btnPostagem";
             this.btnPostagem.Size = new System.Drawing.Size(104, 32);
             this.btnPostagem.TabIndex = 3;
@@ -206,9 +245,9 @@ namespace DesafioFrameworkAPI
             // 
             this.panelConteudo.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panelConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelConteudo.Location = new System.Drawing.Point(110, 70);
+            this.panelConteudo.Location = new System.Drawing.Point(138, 70);
             this.panelConteudo.Name = "panelConteudo";
-            this.panelConteudo.Size = new System.Drawing.Size(690, 380);
+            this.panelConteudo.Size = new System.Drawing.Size(662, 380);
             this.panelConteudo.TabIndex = 2;
             // 
             // Form1
@@ -243,6 +282,8 @@ namespace DesafioFrameworkAPI
         private System.Windows.Forms.Button btnPostagem;
         private System.Windows.Forms.Panel panelConteudo;
         private System.Windows.Forms.Button btnAbrirTabela;
+        private System.Windows.Forms.Button btnTabelaDeTodos;
+        private System.Windows.Forms.Button btnTabelasDeAlbuns;
     }
 }
 

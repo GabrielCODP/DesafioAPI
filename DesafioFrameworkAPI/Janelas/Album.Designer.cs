@@ -45,7 +45,7 @@ namespace DesafioFrameworkAPI.Janelas
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 35);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Album";
+            this.label1.Text = "Álbum";
             // 
             // btnGerarAlbum
             // 
@@ -54,7 +54,7 @@ namespace DesafioFrameworkAPI.Janelas
             this.btnGerarAlbum.Name = "btnGerarAlbum";
             this.btnGerarAlbum.Size = new System.Drawing.Size(128, 23);
             this.btnGerarAlbum.TabIndex = 9;
-            this.btnGerarAlbum.Text = "Gerar Album";
+            this.btnGerarAlbum.Text = "Gerar Álbum";
             this.btnGerarAlbum.UseVisualStyleBackColor = true;
             this.btnGerarAlbum.Click += new System.EventHandler(this.btnGerarAlbum_Click);
             // 
@@ -76,7 +76,7 @@ namespace DesafioFrameworkAPI.Janelas
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(128, 23);
             this.btnLimpar.TabIndex = 11;
-            this.btnLimpar.Text = "Limpar Album";
+            this.btnLimpar.Text = "Limpar Álbum";
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 

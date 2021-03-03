@@ -96,7 +96,17 @@ namespace DesafioFrameworkAPI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<TabelaDados>();
+            AbrirFormulario<TabelaDePostagem>();
+        }
+
+        private void btnTabelasDeAlbuns_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<TabelaDeAlbum>();
+        }
+
+        private void btnTabelaDeTodos_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<TabelaDeTodos>();
         }
     }
 }
