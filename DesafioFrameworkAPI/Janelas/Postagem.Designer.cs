@@ -33,6 +33,8 @@ namespace DesafioFrameworkAPI.Janelas
             this.label1 = new System.Windows.Forms.Label();
             this.btnGerarPostagem = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnProcurarId = new System.Windows.Forms.Button();
+            this.txtProcurarID = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // richTextBoxPostagem
@@ -79,12 +81,34 @@ namespace DesafioFrameworkAPI.Janelas
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click_1);
             // 
+            // btnProcurarId
+            // 
+            this.btnProcurarId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnProcurarId.Location = new System.Drawing.Point(603, 400);
+            this.btnProcurarId.Name = "btnProcurarId";
+            this.btnProcurarId.Size = new System.Drawing.Size(128, 23);
+            this.btnProcurarId.TabIndex = 10;
+            this.btnProcurarId.Text = "Procurar ID";
+            this.btnProcurarId.UseVisualStyleBackColor = true;
+            this.btnProcurarId.Click += new System.EventHandler(this.btnProcurarId_Click);
+            // 
+            // txtProcurarID
+            // 
+            this.txtProcurarID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtProcurarID.Location = new System.Drawing.Point(603, 371);
+            this.txtProcurarID.Name = "txtProcurarID";
+            this.txtProcurarID.Size = new System.Drawing.Size(132, 23);
+            this.txtProcurarID.TabIndex = 13;
+            this.txtProcurarID.TextChanged += new System.EventHandler(this.txtProcurarID_TextChanged);
+            // 
             // Postagem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(44)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(747, 451);
+            this.Controls.Add(this.txtProcurarID);
+            this.Controls.Add(this.btnProcurarId);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnGerarPostagem);
             this.Controls.Add(this.label1);
@@ -102,5 +126,7 @@ namespace DesafioFrameworkAPI.Janelas
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnGerarPostagem;
         private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnProcurarId;
+        private System.Windows.Forms.TextBox txtProcurarID;
     }
 }

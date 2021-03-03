@@ -33,6 +33,8 @@ namespace DesafioFrameworkAPI.Janelas
             this.label1 = new System.Windows.Forms.Label();
             this.btnGerarTodos = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtProcurarID = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // richTextBoxTodos
@@ -79,12 +81,33 @@ namespace DesafioFrameworkAPI.Janelas
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(621, 400);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(128, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Procurar ID";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtProcurarID
+            // 
+            this.txtProcurarID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtProcurarID.Location = new System.Drawing.Point(621, 371);
+            this.txtProcurarID.Name = "txtProcurarID";
+            this.txtProcurarID.Size = new System.Drawing.Size(132, 23);
+            this.txtProcurarID.TabIndex = 14;
+            // 
             // Todos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(44)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(765, 450);
+            this.Controls.Add(this.txtProcurarID);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnGerarTodos);
             this.Controls.Add(this.label1);
@@ -103,5 +126,7 @@ namespace DesafioFrameworkAPI.Janelas
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnGerarTodos;
         private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtProcurarID;
     }
 }

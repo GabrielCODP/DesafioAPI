@@ -56,5 +56,32 @@ namespace DesafioFrameworkAPI.Janelas
             richTextBoxTodos.Clear();
             btnGerarTodos.Visible = true;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            EntradaDeDadosTodos();
+
+            async Task EntradaDeDadosTodos()
+            {
+                try
+                {
+                    string texto = txtProcurarID.Text;
+                    var dadosAPI = RestService.For<ITodos>(UrlControle.BaseUrl);
+                    var resultado = await dadosAPI.GetId(texto);
+
+                    richTextBoxTodos.AppendText($"\n\n_UserId: {resultado.userId}\n_id:{resultado.id}\n_Title: {resultado.title}\n_Completed: {resultado.completed}");
+                }
+                catch (Exception)
+                {
+
+                    richTextBoxTodos.AppendText("Erro ao gerar dados: " + e);
+                }
+
+            }
+
+            btnGerarTodos.Visible = false;
+
+        }
     }
 }

@@ -12,6 +12,6 @@ namespace DesafioFrameworkAPI.Classes.Interfaces
         Task<ICollection<Albuns>> GetAlbumTotal();
 
         [Get("/albums/{id}")]
-        Task<Albuns> GetId(int id);
+        Task<Albuns> GetId(string id);
     }
 }

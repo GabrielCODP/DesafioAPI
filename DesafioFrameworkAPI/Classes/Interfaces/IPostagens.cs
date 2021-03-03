@@ -12,6 +12,6 @@ namespace DesafioFrameworkAPI.Classes.Interfaces
         Task<ICollection<Postagens>> GetPostagemTotal();
 
         [Get("/posts/{id}")]
-        Task<Postagens> GetId(int id);
+        Task<Postagens> GetId(string id);
     }
 }

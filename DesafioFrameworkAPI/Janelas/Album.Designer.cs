@@ -33,6 +33,8 @@ namespace DesafioFrameworkAPI.Janelas
             this.btnGerarAlbum = new System.Windows.Forms.Button();
             this.richTextBoxAlbuns = new System.Windows.Forms.RichTextBox();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.txtProcurarID = new System.Windows.Forms.TextBox();
+            this.btnProcurarID = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -78,12 +80,34 @@ namespace DesafioFrameworkAPI.Janelas
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
+            // txtProcurarID
+            // 
+            this.txtProcurarID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtProcurarID.Location = new System.Drawing.Point(630, 378);
+            this.txtProcurarID.Name = "txtProcurarID";
+            this.txtProcurarID.Size = new System.Drawing.Size(132, 23);
+            this.txtProcurarID.TabIndex = 12;
+            this.txtProcurarID.TextChanged += new System.EventHandler(this.textBoxProcurarID_TextChanged);
+            // 
+            // btnProcurarID
+            // 
+            this.btnProcurarID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnProcurarID.Location = new System.Drawing.Point(630, 407);
+            this.btnProcurarID.Name = "btnProcurarID";
+            this.btnProcurarID.Size = new System.Drawing.Size(128, 23);
+            this.btnProcurarID.TabIndex = 13;
+            this.btnProcurarID.Text = "Procurar ID";
+            this.btnProcurarID.UseVisualStyleBackColor = true;
+            this.btnProcurarID.Click += new System.EventHandler(this.btnProcurarID_Click);
+            // 
             // Album
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(44)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(774, 450);
+            this.Controls.Add(this.btnProcurarID);
+            this.Controls.Add(this.txtProcurarID);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.richTextBoxAlbuns);
             this.Controls.Add(this.btnGerarAlbum);
@@ -101,5 +125,7 @@ namespace DesafioFrameworkAPI.Janelas
         private System.Windows.Forms.Button btnGerarAlbum;
         private System.Windows.Forms.RichTextBox richTextBoxAlbuns;
         private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.TextBox txtProcurarID;
+        private System.Windows.Forms.Button btnProcurarID;
     }
 }

@@ -16,7 +16,7 @@ namespace DesafioFrameworkAPI.Janelas
 {
     public partial class Postagem : Form
     {
-       
+
         public Postagem()
         {
             InitializeComponent();
@@ -37,15 +37,15 @@ namespace DesafioFrameworkAPI.Janelas
                 }
                 catch (Exception e)
                 {
-                    richTextBoxPostagem.AppendText("Erro ao gerar dados: " + e); 
+                    richTextBoxPostagem.AppendText("Erro ao gerar dados: " + e);
                 }
             }
 
             btnGerarPostagem.Visible = false;
-            
+
         }
 
-        
+
 
         private void richTextBoxPostagem_TextChanged(object sender, EventArgs e)
         {
@@ -56,6 +56,34 @@ namespace DesafioFrameworkAPI.Janelas
         {
             richTextBoxPostagem.Clear();
             btnGerarPostagem.Visible = true;
+        }
+
+        private void txtProcurarID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnProcurarId_Click(object sender, EventArgs e)
+        {
+            EntradaDeDadosPostagem();
+
+            async Task EntradaDeDadosPostagem()
+            {
+                try
+                {
+                    string texto = txtProcurarID.Text;
+                    var dadosAPI = RestService.For<IPostagens>(UrlControle.BaseUrl);
+                    var resultado = await dadosAPI.GetId(texto);
+
+                    richTextBoxPostagem.AppendText($"\n\n_UserId: {resultado.userId}\n_id:{resultado.id}\n_Title: {resultado.title}\n_Body:{resultado.body}");
+                }
+                catch (Exception e)
+                {
+                    richTextBoxPostagem.AppendText("Erro ao gerar dados: " + e);
+                }
+            }
+
+            btnGerarPostagem.Visible = false;
         }
     }
 }
